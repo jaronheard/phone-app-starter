@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from '../ui/Image';
 import Card from '../ui/Card';
 
 import {
