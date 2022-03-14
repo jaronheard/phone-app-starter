@@ -13,6 +13,7 @@ const Store = new PullStateStore({
   notifications,
   settings: {
     enableNotifications: true,
+    notificationFrequency: 'daily',
   },
 });
 

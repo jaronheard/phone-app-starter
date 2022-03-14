@@ -8,6 +8,8 @@ import {
   IonList,
   IonToggle,
   IonLabel,
+  IonSelect,
+  IonSelectOption,
 } from '@ionic/react';
 
 import Store from '../../store';
@@ -37,6 +39,14 @@ const Settings = () => {
                 });
               }}
             />
+          </IonItem>
+          <IonItem> 
+            <IonLabel>Notification Timing</IonLabel>
+            <IonSelect value={settings.notificationFrequency} placeholder="Select" onIonChange={e => setSettings({ ...settings, notificationFrequency: e.detail.value})}>
+              <IonSelectOption value="daily">Daily</IonSelectOption>
+              <IonSelectOption value="weekly">Weekly</IonSelectOption>
+              <IonSelectOption value="monthly">Monthly</IonSelectOption>
+            </IonSelect>
           </IonItem>
         </IonList>
       </IonContent>
