@@ -21,11 +21,6 @@ const pages = [
     url: '/tabs/feed',
   },
   {
-    title: 'Lists',
-    icon: list,
-    url: '/tabs/lists',
-  },
-  {
     title: 'Settings',
     icon: cog,
     url: '/tabs/settings',
